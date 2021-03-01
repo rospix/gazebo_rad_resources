@@ -154,7 +154,7 @@
 
     <!-- radiation source {-->
 
-    <model name="am241">
+    <model name="cs137">
       <static>1</static>
       <pose>10 10 0 0 0 0</pose>
       <link name="link">
@@ -166,10 +166,10 @@
           </geometry>
         </visual>
       </link>
-      <plugin name="am241" filename="libgazebo_rad_source.so">
-        <material>am241</material>
-        <activity>1000e6</activity> <!-- [Bq] -->
-        <energy>0.05954</energy> <!-- [MeV] -->
+      <plugin name="cs137" filename="libgazebo_rad_source.so">
+        <material>cs137</material>
+        <activity>1000e9</activity> <!-- [Bq] -->
+        <energy>0.661</energy> <!-- [MeV] -->
         <publish_rate>10</publish_rate> <!-- [Hz] -->
       </plugin>
     </model>
@@ -178,13 +178,13 @@
 
     <!-- wall1 {-->
 
-    <model name="wall1">
-      <include>
-        <static>true</static>
-        <uri>model://concrete_20_2400_1000</uri>
-        <pose>10 0 0 0 0 0</pose>
-      </include>
-    </model>
+    <!-- <model name="wall1"> -->
+    <!--   <include> -->
+    <!--     <static>true</static> -->
+    <!--     <uri>model://concrete_20_2400_1000</uri> -->
+    <!--     <pose>10 0 0 0 0 0</pose> -->
+    <!--   </include> -->
+    <!-- </model> -->
 
     <!--}-->
 

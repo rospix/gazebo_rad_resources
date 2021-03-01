@@ -13,7 +13,7 @@
     <!-- supply this argument to specify the world name within the mrs_gazebo_common_resources package -->
   <arg name="world_name" default="simple" />
 
-    <!-- supply this argument to specity a world file from outside of the mrs_gazebo_common_resources package -->
+  <!-- supply this argument to specity a world file from outside of the mrs_gazebo_common_resources package -->
   <arg name="world_file" default="$(find gazebo_rad_resources)/worlds/$(arg world_name).world" />
 
     <!-- set use_sim_time flag -->
