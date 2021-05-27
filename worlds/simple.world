@@ -168,7 +168,7 @@
       </link>
       <plugin name="cs137" filename="libgazebo_rad_source.so">
         <material>cs137</material>
-        <activity>200e6</activity> <!-- [Bq] -->
+        <activity>10e9</activity> <!-- [Bq] -->
         <energy>0.661</energy> <!-- [MeV] -->
         <publish_rate>10</publish_rate> <!-- [Hz] -->
       </plugin>
