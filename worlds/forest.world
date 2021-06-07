@@ -29551,7 +29551,7 @@
 
     <model name="cs137">
       <static>1</static>
-      <pose>0 0 0 0 0</pose>
+      <pose>20 20 0 0 0</pose>
       <link name="link">
         <visual name="visual">
           <geometry>
