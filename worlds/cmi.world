@@ -1132,7 +1132,7 @@
 
     <model name="cs137">
       <static>1</static>
-      <pose>0 8 0 0 0</pose>
+      <pose>-5 7 0 0 0</pose>
       <link name="link">
         <visual name="visual">
           <geometry>
@@ -1144,7 +1144,7 @@
       </link>
       <plugin name="cs137" filename="libgazebo_rad_source.so">
         <material>cs137</material>
-        <activity>100e9</activity> <!-- [Bq] -->
+        <activity>10e8</activity> <!-- [Bq] -->
         <energy>0.661</energy> <!-- [MeV] -->
         <publish_rate>10</publish_rate> <!-- [Hz] -->
       </plugin>
