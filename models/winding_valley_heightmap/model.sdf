@@ -7,7 +7,7 @@
         <geometry>
           <heightmap>
             <uri>model://winding_valley_heightmap/materials/textures/heightmap.png</uri>
-            <size>1000 1000 25</size>
+            <size>1000 1000 500</size>
             <pos>0 0 -4.0</pos>
           </heightmap>
         </geometry>
@@ -40,7 +40,7 @@
               <fade_dist>5</fade_dist>
             </blend>
             <uri>model://winding_valley_heightmap/materials/textures/heightmap.png</uri>
-            <size>1000 1000 25</size>
+            <size>1000 1000 50</size>
             <pos>0 0 -4.0</pos>
           </heightmap>
         </geometry>
