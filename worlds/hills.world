@@ -72,6 +72,8 @@
 
     <!--}-->
 
+    <!-- models {-->
+    
     <model name='heightmap'>
       <static>1</static>
       <link name='heightmap::link'>
@@ -396,6 +398,11 @@
       </link>
       <pose>304.936 214.354 13.2614 0 -0 0</pose>
     </model>
+    
+    <!--}-->
+
+    <!-- state {-->
+    
     <state world_name='default'>
       <sim_time>729 756000000</sim_time>
       <real_time>733 210524034</real_time>
@@ -452,6 +459,8 @@
         </link>
       </model>
     </state>
+    
+    <!--}-->
 
     <!-- user camera {-->
 
@@ -472,6 +481,30 @@
     <!--}-->
 
     <!-- =============== radiation-specific objects =============== -->
+
+    <!-- radiation source {-->
+
+    <model name="cs137">
+      <static>1</static>
+      <pose>300 150 7 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.2 0.2 0.2</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+      <plugin name="cs137" filename="libgazebo_rad_source.so">
+        <material>cs137</material>
+        <activity>10e8</activity> <!-- [Bq] -->
+        <energy>0.661</energy> <!-- [MeV] -->
+        <publish_rate>10</publish_rate> <!-- [Hz] -->
+      </plugin>
+    </model>
+
+    <!--}-->
 
   </world>
 </sdf>
